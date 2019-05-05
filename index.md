@@ -19,11 +19,11 @@ Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, 
 ## Source code
 1. installing Raspberry Pi and Smart Mirror 
 
-https://www.magicmirrorcentral.com/complete-raspberry-pi-magic-mirror-tutorial/
+  https://www.magicmirrorcentral.com/complete-raspberry-pi-magic-mirror-tutorial/
 
 2. installing google assistant
 
-https://www.youtube.com/watch?v=UBgH5hejYtM&feature=youtu.be
+  https://www.youtube.com/watch?v=UBgH5hejYtM&feature=youtu.be
 
 ## details
 
