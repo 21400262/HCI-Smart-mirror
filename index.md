@@ -26,5 +26,6 @@ Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, 
 Low fidelity(Paper prototyping)
 
 
+
 - References
 
