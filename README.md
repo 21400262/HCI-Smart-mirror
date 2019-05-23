@@ -15,7 +15,17 @@ Automatic installation
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
 Manual Installation
 ```
+Then following modules will be installed automatically
+- Clock
+- Calendar
+- Current Weather
+- Weather Forecast
+- News Feed
+- Compliments
+- Hello World
+- Alert
 3. Change settings
+
 4. weather and weather forecast module
 5. google calendar
 6. install google photo
