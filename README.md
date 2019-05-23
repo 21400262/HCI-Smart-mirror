@@ -16,14 +16,14 @@ bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/maste
 Manual Installation
 ```
 Then following modules will be installed automatically
-- Clock
-- Calendar
-- Current Weather
-- Weather Forecast
-- News Feed
-- Compliments
-- Hello World
-- Alert
+- [Clock](https://github.com/MichMich/MagicMirror/tree/master/modules/default/clock)
+- [Calendar](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar)
+- [Current Weather](https://github.com/MichMich/MagicMirror/tree/master/modules/default/currentweather)
+- [Weather Forecast](https://github.com/MichMich/MagicMirror/tree/master/modules/default/weatherforecast)
+- [News Feed](https://github.com/MichMich/MagicMirror/tree/master/modules/default/newsfeed)
+- [Compliments](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments)
+- [Hello World](https://github.com/MichMich/MagicMirror/tree/master/modules/default/helloworld)
+- [Alert](https://github.com/MichMich/MagicMirror/tree/master/modules/default/alert)
 3. Change settings
 
 4. weather and weather forecast module
