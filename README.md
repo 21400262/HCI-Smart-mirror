@@ -15,7 +15,7 @@ Automatic installation
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
 Manual Installation
 ```
-Then following modules will be installed automatically
+Then following modules will be installed automatically. You can refer to these links to change options of each module such as positions, colors, images, size and so on.  
 - [Clock](https://github.com/MichMich/MagicMirror/tree/master/modules/default/clock)
 - [Calendar](https://github.com/MichMich/MagicMirror/tree/master/modules/default/calendar)
 - [Current Weather](https://github.com/MichMich/MagicMirror/tree/master/modules/default/currentweather)
