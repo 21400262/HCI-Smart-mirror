@@ -2,19 +2,25 @@
 
 ## members
 Sion, Brenda Dzanja,Benjamin Tutemi Manyunya, Yire yoon
-
 ## Background & objective of research
-Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day
-Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once.
-This mirror will help the users to check information while doing any other job.
-Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
-
+Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the dayMany people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
 ## Step-by-step tutorial
-1. install Raspberry Pi 
-2. intall Smart mirror. 
+1. install Raspberry Pi
+download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version.
+  https://www.raspberrypi.org/
+2. intall Smart mirror.
+Automatic installation
+```
+bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
+Manual Installation
+```
+3. Change settings
+4. weather and weather forecast module
+5. google calendar
+6. install google photo
 3. install google assistant
-4. intall YouTube
+4. install remote controller
 
 ## Source code
 1. installing Raspberry Pi and Smart Mirror 
