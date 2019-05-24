@@ -6,10 +6,12 @@ Sion, Brenda Dzanja,Benjamin Tutemi Manyunya, Yire yoon
 Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day. Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
 ## Step-by-step tutorial
-1. install Raspberry Pi
+* 1. install Raspberry Pi
 download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version.
   https://www.raspberrypi.org/
-2. intall Smart mirror.
+    
+      
+* 2. intall Smart mirror.
 Automatic installation
 ```
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
@@ -24,8 +26,9 @@ Then following modules will be installed automatically. You can refer to these l
 - [Compliments](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments)
 - [Hello World](https://github.com/MichMich/MagicMirror/tree/master/modules/default/helloworld)
 - [Alert](https://github.com/MichMich/MagicMirror/tree/master/modules/default/alert)
-
-3. Change settings
+  
+    
+* 3. Change settings
  - Installation of korean font 
  ```sudo apt-get --yes install fonts-nanum fonts-symbola```
  - Sound output
@@ -42,7 +45,9 @@ pm2 save
 #### to stop mirror --> pm2 stop MagicMirror
 #### to restart mirror --> pm2 restart MagicMirror
 ```
-4. install google assistant
+  
+    
+* 4. install google assistant
 MMM-Hotword and MMM-AssistantMk2 are required for google assistant>>
 >> step1. installation of related programs
 ```
@@ -87,15 +92,16 @@ Hello
 
 mv token.json ./profiles/default.json
 ```
-
-5. currentweather and weatherforecast module
+  
+    
+* 5. currentweather and weatherforecast module
 open your config.js file and look for currentweather.  
 change location to your location  
 get a API keys from https://openweathermap.org/ and paste the API ket to the appid in the config.js  
 do the same steps for the weatherforcast modules  
-
-
-6. google calendar
+  
+    
+* 6. google calendar
 get a ical address from your google calendar and paste it to the url part in your config.js file  
 ```
 config: {
@@ -114,8 +120,9 @@ config: {
 	],
 }
 ```
-
-7. install google photos  
+  
+    
+* 7. install google photos  
 >> step1. Install Module  
 ```
 git clone https://github.com/eouia/MMM-GooglePhotos.git
@@ -147,8 +154,10 @@ travel to paris : AGj1epU5VMNoBGK9GDX3k_zDQaPT16Fe56o0N93eN6aXn-f21M98
 15. Remember the id    
 16. now set your config.js    
 You can chage the size of you photos and speed of slide and so on...
+  
+    
 
-8. install remote controller  
+* 8. install remote controller  
 you can control your smarmirror modules on your smartphone.  
 automatic installation  
 ```
