@@ -170,7 +170,6 @@ npm install # install (new) dependencies
 ```
 
 ## Source code  
-1. Installing Raspberry Pi and Smart Mirror  
 - Installation of Raspberry Pi : https://www.raspberrypi.org/  
 - Installation of modules : https://github.com/MichMich/MagicMirror  
 - Installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
@@ -181,4 +180,4 @@ npm install # install (new) dependencies
 - Google Assistants is not working as smooth as on the smart phone
 - Some APIs are not working well with the Raspberry Pi and SmartMirror
 ## Conclusion
-Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic
+Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic.
