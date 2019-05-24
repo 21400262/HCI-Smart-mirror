@@ -1,8 +1,8 @@
 # Smart Mirror
 
 ## members
-Sion, Brenda Dzanja,Benjamin Tutemi Manyunya, Yire yoon
-## Background & objective of research
+Sion Lee, Brenda Dzanja, Benjamin Tutemi Manyunya, Yire Yoon
+## Background & objective 
 Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day. Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
 ## Step-by-step tutorial
@@ -157,7 +157,7 @@ You can chage the size of you photos and speed of slide and so on...
   
     
 
-**8. install remote controller**  
+**8. install remote control**  
 you can control your smarmirror modules on your smartphone.  
 automatic installation  
 ```
@@ -176,7 +176,6 @@ npm install # install (new) dependencies
 - installation of modules : https://github.com/MichMich/MagicMirror  
 - installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
 
-## details
 ## Limiation
 - YouTube is incompatible with the smart mirror module
 - Mic sensors are not working properly
@@ -184,6 +183,3 @@ npm install # install (new) dependencies
 - Some APIs are not working well with the Raspberry Pi and SmartMirror
 ## Conclusion
 Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic
-## Photos & videos
-### Low fidelity(Paper prototyping)
-
