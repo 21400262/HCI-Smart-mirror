@@ -24,6 +24,7 @@ Then following modules will be installed automatically. You can refer to these l
 - [Compliments](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments)
 - [Hello World](https://github.com/MichMich/MagicMirror/tree/master/modules/default/helloworld)
 - [Alert](https://github.com/MichMich/MagicMirror/tree/master/modules/default/alert)
+
 3. Change settings
  - Installation of korean font 
  ```sudo apt-get --yes install fonts-nanum fonts-symbola```
@@ -41,11 +42,7 @@ pm2 save
 #### to stop mirror --> pm2 stop MagicMirror
 #### to restart mirror --> pm2 restart MagicMirror
 ```
-4. weather and weather forecast module
-
-5. google calendar
-6. install google photo
-3. install google assistant
+4. install google assistant
 MMM-Hotword and MMM-AssistantMk2 are required for google assistant>>
 >> step1. installation of related programs
 ```
@@ -67,11 +64,16 @@ npm install --save-dev electron-rebuild
 ./node_modules/.bin/electron-rebuild
 chmod +x ~/MagicMirror/modules/MMM-AssistantMk2/scripts/*.sh
  ```
->> step4. google API<br>
-   Create a new project. https://console.actions.google.com/
-   search for Google Assistant API from https://console.cloud.google.com/ and create a credentials.json.
-   place the file into the "/home/pi/MagicMirror/modules/MMM-AssistantMk2/"
-   then, type the following code:
+>> step4. google API
+Go to Google API Console  
+From the menu bar, select a project or create a new project.    
+To open the Google API Library, from the Navigation menu, select APIs & Services > Library.    
+Search for "Google Assistant API". Select the correct result and click Enable.    
+Then, from the menu, select APIs & Services > Credentials.  
+On the Credentials page, click Create Credentials > OAuth client ID.  
+Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)  
+Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as credentials.json and save it to your MMM-AssistantMk2 directory.  
+then, type the following code:  
    ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 node auth_and_test.js
@@ -85,7 +87,79 @@ Hello
 
 mv token.json ./profiles/default.json
 ```
-4. install remote controller
+
+5. currentweather and weatherforecast module
+open your config.js file and look for currentweather.  
+change location to your location  
+get a API keys from https://openweathermap.org/ and paste the API ket to the appid in the config.js  
+do the same steps for the weatherforcast modules  
+
+
+6. google calendar
+get a ical address from your google calendar and paste it to the url part in your config.js file  
+```
+config: {
+	colored: false,
+	coloredSymbolOnly: false,
+	calendars: [
+		{
+			url: 'http://www.calendarlabs.com/templates/ical/US-Holidays.ics',
+			symbol: 'calendar',
+			auth: {
+			    user: 'username',
+			    pass: 'superstrongpassword',
+			    method: 'basic'
+			}
+		},
+	],
+}
+```
+
+7. install google photos  
+>> step1. Install Module  
+```
+git clone https://github.com/eouia/MMM-GooglePhotos.git
+cd MMM-GooglePhotos
+npm install
+```
+>>step2.  
+1. Go to Google API Console    
+2. From the menu bar, select a project or create a new project.  
+3. To open the Google API Library, from the Navigation menu, select APIs & Services > Library.  
+4. Search for "Google Photos Library API". Select the correct result and click Enable. (You may need to enable "Google Plus" also.)   
+5. Then, from the menu, select APIs & Services > Credentials.   
+6. On the Credentials page, click Create Credentials > OAuth client ID.  
+7. Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)   
+8. Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as 9. credentials.json and save it to your MMM-GooglePhotos directory.    
+10. then open console and type  
+```
+cd ~/MagicMirror/modules/MMM-GooglePhotos
+node auth_and_test.js
+```
+11. the internet browser will be opened, then log in to ypur google account and do the allowance.  
+12. copy the code that is shown after the allowance and paste on the console.  
+13. Now you can get list of your Google Photos albums. like these;  
+14. <ALBUM_NAME> : <ALBUM_ID>  
+```
+travel to paris : AGj1epU5VMNoBGK9GDX3k_zDQaPT16Fe56o0N93eN6aXn-f21M98  
+...
+```
+15. Remember the id    
+16. now set your config.js    
+You can chage the size of you photos and speed of slide and so on...
+
+8. install remote controller  
+you can control your smarmirror modules on your smartphone.  
+automatic installation  
+```
+bash -c "$(curl -s https://raw.githubusercontent.com/Jopyth/MMM-Remote-Control/master/installer.sh)"
+```
+Update  
+```
+cd ~/MagicMirror/modules/MMM-Remote-Control # adapt directory if you are using a different one
+git pull
+npm install # install (new) dependencies
+```
 
 ## Source code
 1. installing Raspberry Pi and Smart Mirror 
