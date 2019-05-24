@@ -6,12 +6,12 @@ Sion, Brenda Dzanja,Benjamin Tutemi Manyunya, Yire yoon
 Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day. Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
 ## Step-by-step tutorial
-* 1. install Raspberry Pi
+**1. install Raspberry Pi**  
 download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version.
   https://www.raspberrypi.org/
     
       
-* 2. intall Smart mirror.
+**2. intall Smart mirror.**  
 Automatic installation
 ```
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
@@ -28,7 +28,7 @@ Then following modules will be installed automatically. You can refer to these l
 - [Alert](https://github.com/MichMich/MagicMirror/tree/master/modules/default/alert)
   
     
-* 3. Change settings
+**3. Change settings**  
  - Installation of korean font 
  ```sudo apt-get --yes install fonts-nanum fonts-symbola```
  - Sound output
@@ -47,7 +47,7 @@ pm2 save
 ```
   
     
-* 4. install google assistant
+**4. install google assistant**  
 MMM-Hotword and MMM-AssistantMk2 are required for google assistant>>
 >> step1. installation of related programs
 ```
@@ -94,14 +94,14 @@ mv token.json ./profiles/default.json
 ```
   
     
-* 5. currentweather and weatherforecast module
+**5. currentweather and weatherforecast module**  
 open your config.js file and look for currentweather.  
 change location to your location  
 get a API keys from https://openweathermap.org/ and paste the API ket to the appid in the config.js  
 do the same steps for the weatherforcast modules  
   
     
-* 6. google calendar
+**6. google calendar**  
 get a ical address from your google calendar and paste it to the url part in your config.js file  
 ```
 config: {
@@ -122,7 +122,7 @@ config: {
 ```
   
     
-* 7. install google photos  
+**7. install google photos**  
 >> step1. Install Module  
 ```
 git clone https://github.com/eouia/MMM-GooglePhotos.git
@@ -157,7 +157,7 @@ You can chage the size of you photos and speed of slide and so on...
   
     
 
-* 8. install remote controller  
+**8. install remote controller**  
 you can control your smarmirror modules on your smartphone.  
 automatic installation  
 ```
@@ -170,22 +170,20 @@ git pull
 npm install # install (new) dependencies
 ```
 
-## Source code
-1. installing Raspberry Pi and Smart Mirror 
-
-  https://www.magicmirrorcentral.com/complete-raspberry-pi-magic-mirror-tutorial/
-
-2. installing google assistant
-
-  https://www.youtube.com/watch?v=UBgH5hejYtM&feature=youtu.be
+## Source code  
+1. installing Raspberry Pi and Smart Mirror  
+- installation of Raspberry Pi : https://www.raspberrypi.org/  
+- installation of modules : https://github.com/MichMich/MagicMirror  
+- installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
 
 ## details
-
-
+## Limiation
+- YouTube is incompatible with the smart mirror module
+- Mic sensors are not working properly
+- Google Assistants is not working as smooth as on the smart phone
+- Some APIs are not working well with the Raspberry Pi and SmartMirror
+## Conclusion
+Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic
 ## Photos & videos
 ### Low fidelity(Paper prototyping)
-
-
-
-## References
 
