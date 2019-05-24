@@ -6,12 +6,11 @@ Sion Lee, Brenda Dzanja, Benjamin Tutemi Manyunya, Yire Yoon
 Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day. Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
 ## Step-by-step tutorial
-**1. install Raspberry Pi**  
-download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version.
-  https://www.raspberrypi.org/
+**1. Install Raspberry Pi**  
+Download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version. https://www.raspberrypi.org/
     
       
-**2. intall Smart mirror.**  
+**2. Intall Smart mirror.**  
 Automatic installation
 ```
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
@@ -32,7 +31,7 @@ Then following modules will be installed automatically. You can refer to these l
  - Installation of korean font 
  ```sudo apt-get --yes install fonts-nanum fonts-symbola```
  - Sound output
- check the speacker icon at the top right corner. choose either analog or HDMI.
+ Check the speacker icon at the top right corner. choose either analog or HDMI.
  - Automatic start of Mirror
  ```
 sudo npm install -g pm2
@@ -47,21 +46,21 @@ pm2 save
 ```
   
     
-**4. install google assistant**  
+**4. Install google assistant**  
 MMM-Hotword and MMM-AssistantMk2 are required for google assistant>>
->> step1. installation of related programs
+> Step1. installation of related programs
 ```
 sudo apt-get --yes install libmagic-dev libatlas-base-dev sox libsox-fmt-all mpg321
 cd ~/MagicMirror/modules/
 git clone https://github.com/eouia/MMM-Hotword.git
 git clone https://github.com/eouia/MMM-AssistantMk2.git
 ```
->> step2. installation of MMM-Hotword
+>> Step2. installation of MMM-Hotword
  ```
 cd ~/MagicMirror/modules/MMM-Hotword/
 npm install
 ```
->> step3. installation of MMM-AssistantMk2
+>> Step3. installation of MMM-AssistantMk2
  ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 npm install
@@ -69,7 +68,7 @@ npm install --save-dev electron-rebuild
 ./node_modules/.bin/electron-rebuild
 chmod +x ~/MagicMirror/modules/MMM-AssistantMk2/scripts/*.sh
  ```
->> step4. google API
+> Step4. google API  
 Go to Google API Console  
 From the menu bar, select a project or create a new project.    
 To open the Google API Library, from the Navigation menu, select APIs & Services > Library.    
@@ -78,7 +77,7 @@ Then, from the menu, select APIs & Services > Credentials.
 On the Credentials page, click Create Credentials > OAuth client ID.  
 Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)  
 Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as credentials.json and save it to your MMM-AssistantMk2 directory.  
-then, type the following code:  
+Then, type the following code:  
    ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 node auth_and_test.js
@@ -94,15 +93,15 @@ mv token.json ./profiles/default.json
 ```
   
     
-**5. currentweather and weatherforecast module**  
-open your config.js file and look for currentweather.  
-change location to your location  
-get a API keys from https://openweathermap.org/ and paste the API ket to the appid in the config.js  
-do the same steps for the weatherforcast modules  
+**5. Currentweather and weatherforecast module**  
+Open your config.js file and look for currentweather.  
+Change location to your location  
+Get a API keys from https://openweathermap.org/ and paste the API ket to the appid in the config.js  
+Do the same steps for the weatherforcast modules  
   
     
-**6. google calendar**  
-get a ical address from your google calendar and paste it to the url part in your config.js file  
+**6. Google calendar**  
+Get a ical address from your google calendar and paste it to the url part in your config.js file  
 ```
 config: {
 	colored: false,
@@ -122,14 +121,14 @@ config: {
 ```
   
     
-**7. install google photos**  
->> step1. Install Module  
+**7. Install google photos**  
+>Step1. Install Module  
 ```
 git clone https://github.com/eouia/MMM-GooglePhotos.git
 cd MMM-GooglePhotos
 npm install
 ```
->>step2.  
+>Step2. Google API  
 1. Go to Google API Console    
 2. From the menu bar, select a project or create a new project.  
 3. To open the Google API Library, from the Navigation menu, select APIs & Services > Library.  
@@ -137,14 +136,14 @@ npm install
 5. Then, from the menu, select APIs & Services > Credentials.   
 6. On the Credentials page, click Create Credentials > OAuth client ID.  
 7. Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)   
-8. Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as 9. credentials.json and save it to your MMM-GooglePhotos directory.    
-10. then open console and type  
+8. Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as 9. Credentials.json and save it to your MMM-GooglePhotos directory.    
+10. Then open console and type  
 ```
 cd ~/MagicMirror/modules/MMM-GooglePhotos
 node auth_and_test.js
 ```
-11. the internet browser will be opened, then log in to ypur google account and do the allowance.  
-12. copy the code that is shown after the allowance and paste on the console.  
+11. The internet browser will be opened, then log in to ypur google account and do the allowance.  
+12. Copy the code that is shown after the allowance and paste on the console.  
 13. Now you can get list of your Google Photos albums. like these;  
 14. <ALBUM_NAME> : <ALBUM_ID>  
 ```
@@ -152,18 +151,18 @@ travel to paris : AGj1epU5VMNoBGK9GDX3k_zDQaPT16Fe56o0N93eN6aXn-f21M98
 ...
 ```
 15. Remember the id    
-16. now set your config.js    
+16. Now set your config.js    
 You can chage the size of you photos and speed of slide and so on...
   
     
 
-**8. install remote control**  
-you can control your smarmirror modules on your smartphone.  
-automatic installation  
+**8. Install remote control**  
+You can control your smarmirror modules on your smartphone.  
+Automatic installation  
 ```
 bash -c "$(curl -s https://raw.githubusercontent.com/Jopyth/MMM-Remote-Control/master/installer.sh)"
 ```
-Update  
+Updates  
 ```
 cd ~/MagicMirror/modules/MMM-Remote-Control # adapt directory if you are using a different one
 git pull
@@ -171,10 +170,10 @@ npm install # install (new) dependencies
 ```
 
 ## Source code  
-1. installing Raspberry Pi and Smart Mirror  
-- installation of Raspberry Pi : https://www.raspberrypi.org/  
-- installation of modules : https://github.com/MichMich/MagicMirror  
-- installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
+1. Installing Raspberry Pi and Smart Mirror  
+- Installation of Raspberry Pi : https://www.raspberrypi.org/  
+- Installation of modules : https://github.com/MichMich/MagicMirror  
+- Installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
 
 ## Limiation
 - YouTube is incompatible with the smart mirror module
