@@ -5,6 +5,8 @@ Sion Lee, Brenda Dzanja, Benjamin Tutemi Manyunya, Yire Yoon
 ## Background & objective 
 Nowadays many people spend much time on the mirror perfecting their looks. As a result they end up being late to do other stuff. The Smart Mirror helps to solve this problem by offering information which gives a head start towards the day. Many people use smartphone or computer to check their daily information. However, it is not easy to check various inforamtion at once. This mirror will help the users to check information while doing any other job. Smart mirror is a small computer with Raspberry Pi. As it is easily modifialbe, we can display our necessary infomation for users.
 
+## Final output
+![output](image.png)
 ## Step-by-step tutorial
 **1. Install Raspberry Pi**  
 Download the Raspbian from the website and start the Raspberry Pi. It is recommended to download the latest full version. https://www.raspberrypi.org/
