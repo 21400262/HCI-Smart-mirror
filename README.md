@@ -191,10 +191,7 @@ address : '0.0.0.0',
 2. Installing the body sensor  
 3. Enabling the touch screen  
 4. Connect home devices to google home to control home devices
-
-4. Recommendation
-Some users thought that it would be useful with touch screen. Also some wanted to connect their health application on the mirror
- 
+5. connect some applications to the mirror
 
 ## Conclusion
 Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic.
