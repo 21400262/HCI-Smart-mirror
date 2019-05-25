@@ -169,7 +169,7 @@ git pull
 npm install # install (new) dependencies
 ```
 change address and whitelist
-For security reasons, the MagicMirror (and therefore the Remote Control) is not reachable externally. To change this, configure address, and ipWhitelist in your config.js (see these lines in the sample config). For example change address to ```0.0.0.0```. ou can add allawable IP addresses to the whitelist or just leave itself to allow many devices.
+For security reasons, the MagicMirror (and therefore the Remote Control) is not reachable externally. To change this, configure address, and ipWhitelist in your config.js (see these lines in the sample config). For example change address to ```0.0.0.0```. You can add allawable IP addresses to the whitelist or just leave itself to allow many devices.
 ```
 address : '0.0.0.0',
     port: 8080,
