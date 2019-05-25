@@ -168,7 +168,13 @@ cd ~/MagicMirror/modules/MMM-Remote-Control # adapt directory if you are using a
 git pull
 npm install # install (new) dependencies
 ```
-
+change address and whitelist
+For security reasons, the MagicMirror (and therefore the Remote Control) is not reachable externally. To change this, configure address, and ipWhitelist in your config.js (see these lines in the sample config). For example change address to ```0.0.0.0```. ou can add allawable IP addresses to the whitelist or just leave itself to allow many devices.
+```
+address : '0.0.0.0',
+    port: 8080,
+    ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.0.42", "::ffff:192.168.0.50"],"
+```
 ## Source code  
 - Installation of Raspberry Pi : https://www.raspberrypi.org/  
 - Installation of modules : https://github.com/MichMich/MagicMirror  
