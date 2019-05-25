@@ -176,7 +176,7 @@ npm install # install (new) dependencies
 - Installation of modules : https://github.com/MichMich/MagicMirror  
 - Installation of modules from 3rd party : https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules  
 
-## Limiation
+## Limitation
 - YouTube is incompatible with the smart mirror module
 - Mic sensors are not working properly
 - Google Assistants is not working as smooth as on the smart phone
