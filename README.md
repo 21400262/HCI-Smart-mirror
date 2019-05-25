@@ -49,7 +49,7 @@ pm2 save
   
     
 **4. Install google assistant**  
-MMM-Hotword and MMM-AssistantMk2 are required for google assistant>>
+MMM-Hotword and MMM-AssistantMk2 are required for google assistant
 > Step1. installation of related programs
 ```
 sudo apt-get --yes install libmagic-dev libatlas-base-dev sox libsox-fmt-all mpg321
@@ -57,12 +57,12 @@ cd ~/MagicMirror/modules/
 git clone https://github.com/eouia/MMM-Hotword.git
 git clone https://github.com/eouia/MMM-AssistantMk2.git
 ```
->Step2. installation of MMM-Hotword
+>Step2. installation of MMM-Hotword  
  ```
 cd ~/MagicMirror/modules/MMM-Hotword/
 npm install
 ```
-> Step3. installation of MMM-AssistantMk2
+> Step3. installation of MMM-AssistantMk2  
  ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 npm install
@@ -80,14 +80,14 @@ chmod +x ~/MagicMirror/modules/MMM-AssistantMk2/scripts/*.sh
 7. Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)  
 8. Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as credentials.json and save it to your MMM-AssistantMk2 directory.  
 9. Then, type the following code:  
-   ```
+```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 node auth_and_test.js
-
+```
 10. internet explore will open soon, then log in to the google and copy the code that appear on the screen and paste on the terminal.
 11. if you see "Type your request" on the screen, type
 ```Hello```
-12. if the response is working well, exit with typing [Ctrl+C]
+12. if the response is working well, exit with typing [Ctrl+C]  
 ```
 mv token.json ./profiles/default.json
 ```
