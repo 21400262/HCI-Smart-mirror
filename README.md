@@ -57,12 +57,12 @@ cd ~/MagicMirror/modules/
 git clone https://github.com/eouia/MMM-Hotword.git
 git clone https://github.com/eouia/MMM-AssistantMk2.git
 ```
->> Step2. installation of MMM-Hotword
+>Step2. installation of MMM-Hotword
  ```
 cd ~/MagicMirror/modules/MMM-Hotword/
 npm install
 ```
->> Step3. installation of MMM-AssistantMk2
+> Step3. installation of MMM-AssistantMk2
  ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 npm install
@@ -70,27 +70,25 @@ npm install --save-dev electron-rebuild
 ./node_modules/.bin/electron-rebuild
 chmod +x ~/MagicMirror/modules/MMM-AssistantMk2/scripts/*.sh
  ```
-> Step4. google API  
-Go to Google API Console  
-From the menu bar, select a project or create a new project.    
-To open the Google API Library, from the Navigation menu, select APIs & Services > Library.    
-Search for "Google Assistant API". Select the correct result and click Enable.    
-Then, from the menu, select APIs & Services > Credentials.  
-On the Credentials page, click Create Credentials > OAuth client ID.  
-Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)  
-Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as credentials.json and save it to your MMM-AssistantMk2 directory.  
-Then, type the following code:  
+> Step4. google API   
+1. Go to Google API Console  
+2. From the menu bar, select a project or create a new project.    
+3. To open the Google API Library, from the Navigation menu, select APIs & Services > Library.    
+4. Search for "Google Assistant API". Select the correct result and click Enable.    
+5. Then, from the menu, select APIs & Services > Credentials.  
+6. On the Credentials page, click Create Credentials > OAuth client ID.  
+7. Select your Application type as Other and submit. (Before or After that, you might be asked for making consent screen. do that.)  
+8. Then, you can download your credential json file from list. Downloaded file name would be client_secret_xxxx...xxx.json. rename it as credentials.json and save it to your MMM-AssistantMk2 directory.  
+9. Then, type the following code:  
    ```
 cd ~/MagicMirror/modules/MMM-AssistantMk2/
 node auth_and_test.js
 
-# internet explore will open soon, then log in to the google and copy the code that appear on the screen and paste on the terminal.
-# if you see "Type your request" on the screen, type
-
-Hello
-
-# if the response is working well, exit with typing [Ctrl+C]
-
+10. internet explore will open soon, then log in to the google and copy the code that appear on the screen and paste on the terminal.
+11. if you see "Type your request" on the screen, type
+```Hello```
+12. if the response is working well, exit with typing [Ctrl+C]
+```
 mv token.json ./profiles/default.json
 ```
   
