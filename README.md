@@ -122,6 +122,7 @@ config: {
   
     
 **7. Install google photos**  
+We installed google photos to see the school bus schedules on the mirror. We uploaded school bus schedules to the google photo album and displayed on the mirror with silde show.
 >Step1. Install Module  
 ```
 git clone https://github.com/eouia/MMM-GooglePhotos.git
@@ -191,7 +192,7 @@ address : '0.0.0.0',
 2. Installing the body sensor  
 3. Enabling the touch screen  
 4. Connect home devices to google home to control home devices
-5. connect some applications to the mirror
+5. connect some health applications to the mirror
 
 ## Conclusion
 Raspberry PI is not so expensive and anyone can easily access to the open sources on the Internet. This mirror is easily modifiable and customizable. Therefore, anyone can make their own custom made smart mirror to make their life more convenient and enthusiastic.
